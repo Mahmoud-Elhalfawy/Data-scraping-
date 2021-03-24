@@ -13,7 +13,6 @@ print(soup.title.text)
 images = soup.find_all('img')
 i = 0
 for image in images:
-    name = image['alt']
     link = image['src']
     print(str(i), link)
 
